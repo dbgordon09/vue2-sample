@@ -1,17 +1,20 @@
 <template>
     <div id="app">
-        <Navbar/>
-        <router-view/>
+        <BulmaNavbar/>
+        <SideDrawer/>
+        <router-view class="mt-5"/>
     </div>
 </template>
 
 <script>
-    import Navbar from './components/layouts/AppNavbar'
+    import BulmaNavbar from "./components/layouts/BulmaNavbar";
+    import SideDrawer from "./components/layouts/SideDrawer";
 
     export default {
         name: 'app',
         components: {
-            Navbar,
+            BulmaNavbar,
+            SideDrawer,
         }
     }
 </script>
